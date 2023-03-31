@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Math Calculator</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Simple Calculator</h1>
+        <h4>This is a simple website created for learning purposes</h4>
+        <a href="index.html">
+          <button class="buttonOFF">Triangle</button>
+        </a>
+        <a href="jajargenjang.html">
+          <button class="buttonON">Parallelogram</button>
+        </a>
+      </div>
+      <div class="mainmenu">
+        <img src="img/JajarGenjang.png" alt="gambar_jajargenjang" width="350px" height="200px" />
+        <h4>Information:</h4>
+        <h5>a = side A</h5>
+        <h5>b = side B</h5>
+        <form id="Form">
+          <h5 style="margin-bottom: 20px">t = Height</h5>
+          <select id="operator">
+            <option value="luas">Calculate the area of the Parallelogram</option>
+            <option value="keliling">Calculate the Circumference of the Parallelogram</option>
+          </select>
+          <input type="text" id="alas" placeholder="Input  Side a" />
+          <input type="text" id="tinggi" placeholder="Input Side b / height" />
+          <button onclick="calculate();">Calculate</button>
+          <button id="reset" onclick="reset1();">Reset</button>
+          <input type="text" id="result" placeholder="Result" />
+        </form>
+      </div>
+      <div class="footer">
+        <p>Made by <a href="#"> Rafly Ayudiansyah </a></p>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
