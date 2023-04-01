@@ -10,9 +10,7 @@
       <header class="header">
         <h1>Simple Calculator</h1>
         <h4>This is a simple website created for learning purposes</h4>
-        <a href="index.html">
-          <button class="buttonON">Triangle</button>
-        </a>
+        <button class="buttonON" onclick="thisPage();">Triangle</button>
         <a href="html/jajargenjang.html">
           <button class="buttonOFF">Parallelogram</button>
         </a>
@@ -23,21 +21,21 @@
       <main class="mainmenu">
         <img src="asset/segitiga.png" alt="gambar_segitiga" width="200px" height="200px" />
         <h4>Information:</h4>
-        <h5>a = side A / Base</h5>
-        <h5>b = side B</h5>
-        <h5>c = side C</h5>
+        <h5>a = Side A / Base</h5>
+        <h5>b = Side B</h5>
+        <h5>c = Side C</h5>
         <h5 style="margin-bottom: 20px">t = Height</h5>
         <form id="Form">
-          <select id="operator">
+          <select id="operator" onclick="disable();">
             <option value="luas">Calculate the area of the Triangle</option>
             <option value="keliling">Calculate the Circumference of the Triangle</option>
           </select>
           <input type="text" id="num1" placeholder="Input  Side a / Base Number" />
           <input type="text" id="num2" placeholder="Input Side b / Height Number" />
-          <input type="text" id="num3" placeholder=" Input Side c" />
+          <input type="text" id="num3" disabled="disable" placeholder=" Input Side c" />
           <button onclick="calc();">Calculate</button>
           <button id="reset" onclick="reset1();">Reset</button>
-          <input type="text" id="result" placeholder="Result" />
+          <input type="text" id="result" placeholder="Result" readonly="readonly" />
         </form>
       </main>
       <!-- akhir konten -->

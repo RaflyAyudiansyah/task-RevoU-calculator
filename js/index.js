@@ -19,7 +19,7 @@ function reset1() {
 function calculate() {
   var alas = parseInt(document.getElementById("alas").value);
   var tinggi = parseInt(document.getElementById("tinggi").value);
-  var oper1 = document.getElementById("operator").value;
+  var oper1 = document.getElementById("operatorJajargenjang").value;
 
   if (oper1 === "keliling") {
     document.getElementById("result").value = 2 * (alas + tinggi);
@@ -27,4 +27,18 @@ function calculate() {
     document.getElementById("result").value = alas * tinggi;
   }
   event.preventDefault();
+}
+
+function disable() {
+  var opera = document.getElementById("operator").value;
+
+  if (opera === "luas") {
+    document.getElementById("num3").disabled = true;
+  } else {
+    document.getElementById("num3").disabled = false;
+  }
+}
+
+function thisPage() {
+  alert("you're currently on this page");
 }
