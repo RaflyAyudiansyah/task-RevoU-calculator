@@ -10,6 +10,12 @@ function calc() {
     document.getElementById("result").value = num1 + num2 + num3;
   }
   event.preventDefault();
+
+  var hasilResult = document.getElementById("result").value;
+
+  if (isNaN(hasilResult)) {
+    alert("Please input number");
+  }
 }
 
 function reset1() {
@@ -27,6 +33,12 @@ function calculate() {
     document.getElementById("result").value = alas * tinggi;
   }
   event.preventDefault();
+
+  var hasilResultJajar = document.getElementById("result").value;
+
+  if (isNaN(hasilResultJajar)) {
+    alert("Please input number");
+  }
 }
 
 function disable() {
